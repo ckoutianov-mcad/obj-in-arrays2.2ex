@@ -1,3 +1,4 @@
+//Array of objects of My Favorite Games
 const myGames = [
     {
         name: "Uno",
@@ -26,6 +27,11 @@ const myGames = [
 ]
 console.log("My Favorite Games ", myGames);
 
+/* 
+User interaction - choosing a number between 1-3.
+Per user's choice, user sees name, short description,
+and rating.
+*/
 const whichGame = window.prompt("I have " + myGames.length + " games in my collection. Pick a number between 1-3 and I will tell you about that game.");
 const selectedIndex = Number(whichGame)-1;
 console.log("You selected" , myGames[whichGame-1].name);
